@@ -16,8 +16,23 @@
   src: url('./fonts/Raleway-Black.ttf') format('ttf'),
        url('./fonts/Raleway-Regular.ttf') format('ttf');
 }
+@font-face {
+  font-family: 'Rubik';
+  src: url('./fonts/Rubik-Black.ttf') format('ttf'),
+       url('./fonts/Rubik-Regular.ttf') format('ttf');
+}
 h1 , h2 , h3 ,h4 , span , p {
-    font-family: 'Migra', serif;
+  font-family: 'Migra', serif;
+}
+.hero {
+  background-image: url('./head_background.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  height: 600px;
+  position: relative; /* ✅ זה חשוב כדי שהטקסטים יישבו על התמונה */
+  z-index: 1;
 }
 .img_position_1 , .img_position_2 , .img_position_3{
     position: absolute;
@@ -26,20 +41,21 @@ h1 , h2 , h3 ,h4 , span , p {
 }
 .img_position_1{
     left: 130px;
-    top: 120px;
-    font-size: 65px;
+    top: 50px;
+    font-size: 58px;
 }
 .img_position_2{
     left: 130px;
-    top: 250px;
-    font-size: 70px;
+    top: 130px;
+    font-size: 58px;
 }
 .img_position_3{
-    left: 650px;
-    top: 420px;
+    left: 550px;
+    top: 220px;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 53px;
 }
+
    .headr_image{
     width: 100%;
     height: 800px;
@@ -54,7 +70,7 @@ h1 , h2 , h3 ,h4 , span , p {
     text-align: right;
     margin-right: 150px;
     margin-left: 150px;
-    font-size: 30px;
+    font-size: 26px;
 }
 .bold_span{
     font-weight: 600;
@@ -84,7 +100,7 @@ h1 , h2 , h3 ,h4 , span , p {
 
 .myself_image img {
   width: 55%;
-  height: 550px;
+  height: 430px;
   display: block;
   margin-right: 150px;
 }
@@ -95,20 +111,74 @@ h1 , h2 , h3 ,h4 , span , p {
 
 .myself_text > p {
   font-family: 'Migra', serif;
-  font-size: 28px;
+  font-size: 25px;
   margin-right: 0;       /* ביטלנו את הדחיפה הרחוקה */
   text-align: right;
   line-height: 1.8;
+}
+.survices {
+  display: flex;
+  flex-direction: row;   /* ✅ במקום column */
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start; /* אפשר גם center אם אתה רוצה שכולם יהיו באמצע לגובה */
+  flex-wrap: wrap; /* אופציונלי – למובייל */
+  padding: 40px;
+}
+.emotional-section {
+  position: relative;
+  background-image: url('./blog1.png'); /* שים כאן את הנתיב המדויק */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* ✅ מקבע את הרקע */
+  color: white;
+  padding: 100px 0;
+  text-align: right;
+  direction: rtl;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* שכבת כהות */
+  z-index: 1;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.btn.btn-dark {
+  max-width: fit-content;
+  padding: 6px 16px;
+  font-size: 16px;
+}
+.artical_bottom_button{
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 
 </style>
 </head>
 <header>
+  <div class="hero">
     <p class="img_position_1">....You were not born to suffer</p>
     <p class="img_position_2">You were born to be yourself</p>
     <p class="img_position_3">Ra Uru Hu</p>
-    <img class="headr_image" src="./head_background.png">
+
+    <svg viewBox="0 0 1440 320" style="position:absolute; bottom:0; width:100%; z-index:2">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,256L60,229.3C120,203,240,149,360,138.7C480,128,600,160,720,165.3C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+  </div>
 </header><br><br>
 <body>
     <h1 class="headline_title">מה זה עיצוב אנושי?</h1><br>
@@ -132,7 +202,119 @@ h1 , h2 , h3 ,h4 , span , p {
         </div>
         <div class="myself_image">
             <img src="./liora.png">
+        </div><br>
+    </div><Br>
+      <div class="survices">
+        <div class="card" style="width: 18rem;">
+          <img src="./card_1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">קריאת מפה בסיסית</h5>
+            <p class="card-text">קריאת מפה  בסיסית  היא רגע של פגישה עם עצמך, כמו להביט במראה עמוקה שמספרת מי את/ה באמת – לפני הציפיות, לפני הרעשים.
+              זו התחלה של קשר חדש עם האנרגיה שלך, עם ההחלטות שלך, ועם הדרך שנכונה רק לך.
+              פגישה שמביאה בהירות, רוך והזמנה לחיות את החיים מתוך הדיוק הפנימי שלך.
+              </p>
+              <button type="button" class="btn btn-dark" onclick="location.href='./aboutme.html'">להמשך</button>
+          </div>
         </div>
-    </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./card_2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">המפה ממשיכה לדבר</h5>
+            <p class="card-text"><span class="bold_span">המשך מפגש הוא מרחב בו המפה ממשיכה לדבר — ברכות, בעדינות, בקצב שלך.</span><br>
+              זה המקום שבו התובנות שירדו מתחילות להתארגן בגוף, בלב, בחיים עצמם.
+              ביחד נוכל לעצור, לעבד, לשאול, ולהישאר בקשר עם התדר שכבר התחיל לנוע.
+              כי לפעמים, דווקא אחרי הקריאה – מתחיל המסע האמיתי פנימה.
+              </p>
+              <button type="button" class="btn btn-dark" onclick="location.href='./aboutme.html'">להמשך</button>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./card_3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">שאלה פנימית </h5>
+            <p class="card-text"><span class="bold_span">היא דרך לקבל תשובה אינטואיטיבית וממוקדת לשאלה אחת שחשובה לך עכשיו.</span>
+              דרך מפת ה-Human Design שלך, אני מקשיבה למה שעולה –
+              ומחזירה תשובה קולית או כתובה, שנולדת בדיוק מהמקום שבו את/ה נמצא/ת.
+              פשוט, אישי, ומכוון לרגע שבו את/ה שואל/ת.
+              </p>
+              <button type="button" class="btn btn-dark" onclick="location.href='./aboutme.html'">להמשך</button>
+          </div>
+        </div>
+      </div><br><br>
+      <div class="emotional-section">
+        <div class="overlay"></div>
+        <div class="content-wrapper">
+          <h1 class="display-4 fst-italic">סמכות רגשית – אומנות ההמתנה שמתוכה נולדת בהירות</h1>
+          <p class="lead my-3">
+            בעולם שרגיל למהר, לקבל החלטות כאן ועכשיו, הסמכות הרגשית מבקשת מאיתנו דבר אחר לגמרי: להרגיש. לחכות. להתבשל. לא למהר להסכמה, לא לקפוץ לתשובה – אלא להניח לרגש לנוע בגלים שלו, עד שהים בתוכנו נרגע והמים מתבהרים.<br><br>
+            אם יש לך סמכות רגשית במפה – זה אומר שאת לא אמורה לדעת את התשובה "עכשיו". לא כי משהו לא בסדר בך, אלא כי את חיה בעולם אחר. עולם שבו התחושה הנכונה נבנית לאורך זמן, ולא נשלפת מהראש.
+          </p>
+          <p class="lead mb-0">
+            <a href="#" class="text-white fw-bold">להמשך קריאה</a>
+          </p>
+        </div>
+      </div><br>
+      <div class="row mb-2">
+
+        <!-- Card 1 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">לישון לבד – חזרה שקטה אל עצמנו</h3>
+              <p class="card-text mb-auto">
+                בעולם שמקדש חיבורים, קרבה, שינה זוגית וחיבוק בלילה – עיצוב אנושי בא ומזכיר לנו משהו אחר:
+כדי לחזור לעצמנו באמת, אנחנו זקוקים למרחב. במיוחד בלילה.
+
+הלילה הוא הזמן שבו הגוף שלנו מתנקה מהשפעות
+במהלך היום אנחנו באינטראקציה – עם רגשות של אחרים, עם מחשבות, עם שדות חשמליים.
+בלילה, בזמן שינה, המערכת שלנו מבקשת לשחרר. להתאזן. לחזור למה שהיא באמת.
+אבל אם אנחנו ישנים ליד אדם אחר – הגוף שלנו ממשיך להגיב. הוא חש את האנרגיה של האחר, את הסמכות שלו
+              </p><br>
+              <a href="#" class="btn btn-dark d-inline-flex align-items-center gap-1">
+                להמשך
+                <svg class="bi" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="./artical1.png" width="200" height="250" alt="Article 1 Image" class="bd-placeholder-img" />
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">מה זה באמת להשפיע כמניפסטור?</h3>
+              <p class="card-text mb-auto">
+                השפעה. מילה גדולה, מסקרנת, לפעמים אפילו מפחידה.
+אבל עבור מניפסטורית – זו לא בחירה. זו נוכחות פנימית שבוראת תנועה.
+
+להשפיע, זה לא לצעוק חזק. זה לא לשלוט.
+זה לא לשכנע אחרים או לשווק את עצמך באגרסיביות.
+להשפיע כמניפסטורית – זה להיות מחוברת למה שנכון לך, ולעשות את הצעד הראשון בלי לחכות.
+
+ההשפעה שלך מתחילה כשאת לא מבטלת את עצמך
+העולם מרגיש אותך עוד לפני שדיברת. האנרגיה שלך נכנסת לחלל, והיא משנה דברים. לפעמים מרעידה. לפעמים מקפיצה. לפעמים פשוט פותחת משהו חדש.
+              </p><br>
+              <a href="#" class="btn btn-dark d-inline-flex align-items-center gap-1">
+                להמשך
+                <svg class="bi" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="./artical2.png" width="200" height="250" alt="Article 2 Image" class="bd-placeholder-img" />
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="artical_bottom_button">
+      <button type="button" class="btn btn-dark" onclick="location.href='./aboutme.html'">לשאר הכתבות לחץ כאן</button>
+      </div>
+
 </body>
 </html>
