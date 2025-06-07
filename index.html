@@ -6,7 +6,7 @@
 <title>Document</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <style>
 @font-face {
@@ -36,6 +36,12 @@ h1 , h2 , h3 ,h4 , span , p {
   height: 600px;
   position: relative; /* ✅ זה חשוב כדי שהטקסטים יישבו על התמונה */
   z-index: 1;
+}
+.img_position_1 , .img_position_2 , .img_position_3 {
+    position: absolute;
+    font-family: 'Raleway';
+}
+
 /* תצוגה רגילה */
 .img_position_1 {
     left: 130px;
@@ -55,23 +61,26 @@ h1 , h2 , h3 ,h4 , span , p {
 }
 
 /* ריספונסיביות */
-@media (max-width: 576px) {
+@media screen and (max-width: 980px) {
   .img_position_1 {
     left: 30px;
     top: 50px;
     font-size: 45px;
   }
+
   .img_position_2 {
     left: 20px;
     top: 120px;
     font-size: 45px;
   }
+
   .img_position_3 {
     left: 300px;
     top: 200px;
     font-size: 48px;
   }
 }
+
 
    .headr_image{
     width: 100%;
@@ -121,6 +130,11 @@ h1 , h2 , h3 ,h4 , span , p {
   display: block;
   margin-right: 150px;
 }
+@media screen and (max-width: 980px) {
+  .myself_image img {
+    height: 300px;
+  }
+}
 
 .myself_text {
   flex: 0.5;
@@ -141,6 +155,22 @@ h1 , h2 , h3 ,h4 , span , p {
   align-items: flex-start; /* אפשר גם center אם אתה רוצה שכולם יהיו באמצע לגובה */
   flex-wrap: wrap; /* אופציונלי – למובייל */
   padding: 40px;
+}
+@media screen and (max-width: 980px) {
+  .survices {
+    flex-direction: column;
+    align-items: center; /* למרכז את הכרטיסים */
+  }
+
+  .survices .card {
+    width: 90% !important; /* מרחב מלא יחסית למסך */
+    margin-bottom: 20px;
+  }
+
+  .survices .card img {
+    width: 100%;
+    height: auto;
+  }
 }
 .emotional-section {
   position: relative;
@@ -200,6 +230,61 @@ h1 , h2 , h3 ,h4 , span , p {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.4); /* שכבה כהה */
   z-index: 1;
+}
+@media screen and (max-width: 980px) {
+  /* הקופסה הראשית של כל הכתבות */
+  .row.mb-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  /* כל כרטיס בנפרד */
+  .row.mb-2 > .col-md-6 {
+    width: 90%;
+  }
+
+  /* המבנה הפנימי של כל כרטיס – כותרים + תמונה */
+  .row.mb-2 .row.g-0 {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* אלמנט התמונה */
+  .row.mb-2 .row.g-0 > .col-auto {
+    display: block !important;
+    order: 1;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* התמונה עצמה */
+  .row.mb-2 .col-auto img {
+    width: 100%;
+    height: 550px;
+  }
+
+  /* הטקסט והכפתור */
+  .row.mb-2 .row.g-0 > .col.p-4 {
+    order: 2;
+    width: 100%;
+    padding: 10px !important;
+  }
+
+  /* כפתור המשך */
+  .row.mb-2 .btn {
+    margin-top: 15px;
+  }
+
+  /* כפתור "לשאר הכתבות" */
+  .artical_bottom_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 /* תוכן הטופס */
@@ -289,6 +374,24 @@ textarea.error {
 </style>
 </head>
 <header>
+  <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">בית</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">שירותים</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">כתבות</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">צור קשר</a>
+        </li>
+      </ul>
+    </header>
+  </div><br>  
   <div class="hero">
     <p class="img_position_1">....You were not born to suffer</p>
     <p class="img_position_2">You were born to be yourself</p>
