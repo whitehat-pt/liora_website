@@ -35,27 +35,41 @@ h1 , h2 , h3 ,h4 , span , p {
   height: 600px;
   position: relative; /* ✅ זה חשוב כדי שהטקסטים יישבו על התמונה */
   z-index: 1;
-}
-.img_position_1 , .img_position_2 , .img_position_3{
-    position: absolute;
-    font-size: 25px;
-    font-family: 'Raleway'
-}
-.img_position_1{
+/* תצוגה רגילה */
+.img_position_1 {
     left: 130px;
     top: 50px;
     font-size: 58px;
 }
-.img_position_2{
+.img_position_2 {
     left: 130px;
     top: 130px;
     font-size: 58px;
 }
-.img_position_3{
+.img_position_3 {
     left: 550px;
     top: 220px;
     font-weight: 700;
     font-size: 53px;
+}
+
+/* ריספונסיביות */
+@media (max-width: 576px) {
+  .img_position_1 {
+    left: 30px;
+    top: 50px;
+    font-size: 45px;
+  }
+  .img_position_2 {
+    left: 20px;
+    top: 120px;
+    font-size: 45px;
+  }
+  .img_position_3 {
+    left: 300px;
+    top: 200px;
+    font-size: 48px;
+  }
 }
 
    .headr_image{
