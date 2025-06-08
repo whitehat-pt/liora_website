@@ -215,6 +215,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     margin: 15px 0 10px;
+    text-align: start;
   }
   
   .article-box p {
@@ -222,6 +223,7 @@ body {
     font-size: 15px;
     line-height: 1.6;
     margin: 0 0 10px;
+    text-align: start;
   }
   
   .continue_button {
@@ -234,6 +236,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
+    margin-left: 180px;
   }
   
   .continue_button:hover {
@@ -275,6 +278,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
+    margin-top: -30px;
   }
   
   .contact-container p {
@@ -314,15 +318,18 @@ body {
   .contact-form button:hover {
     background-color: #ddd3c6;
   }
+  .site-footer {
+    background-color: #011629;
+    padding: 30px 20px 15px;
+    text-align: center;
+  }
+  
   .social-icons-grid {
     display: grid;
     grid-template-columns: repeat(2, 60px);
     gap: 20px;
     justify-content: center;
-    margin-top: 30px;
-    background-color: #011629;
-    margin-top: 0px;
-    padding-top: 10px;
+    margin-bottom: 20px;
   }
   
   .circle-icon {
@@ -344,6 +351,12 @@ body {
   
   .circle-icon:hover {
     transform: scale(1.1);
+  }
+  
+  .footer-text {
+    color: white;
+    font-size: 23px;
+    margin-top: 10px;
   }
   
   
