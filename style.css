@@ -1,11 +1,14 @@
+
+/* Reset basic styles */
 body {
     margin: 0;
     padding: 0;
   }
-/* רקע עליון */
-.hero-section {
+  
+  /* Hero section */
+  .hero-section {
     position: relative;
-    height: 750px;
+    height: 450px;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -15,7 +18,7 @@ body {
   }
   
   .hero-background {
-    background-image: url('./site1.png'); /* החלף בשם התמונה שלך */
+    background-image: url('./site1.png');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -28,88 +31,83 @@ body {
     position: relative;
     z-index: 2;
     color: white;
-    margin-right: 250px;
+    margin: 0 10px;
   }
   
   .hero-text h1 {
-    font-size: 50px;
-    margin-bottom: 0px;
-
+    font-size: 26px;
+    margin-bottom: 10px;
   }
   
   .quote-author {
-    font-size: 50px;
-    color: white;
-    margin-bottom: 350px;
-    margin-left: 350px;
-    margin-top: 10px;
+    font-size: 20px;
     font-weight: 600;
   }
   
-  /* מקטע עיצוב אנושי */
+  /* Human Design section */
   .hd-explanation {
-    background: linear-gradient(to bottom, #0f1f30, #2f3e4c, #d8d8d8);
-    padding-top: 40px;
-    text-align: start;
     background-image: url(./2.png);
     background-size: cover;
     background-position: center;
-    height: auto;
-    
+    padding: 20px;
+    text-align: start;
   }
   
   .hd-explanation .content {
-    margin: 0 auto;
     color: #fff;
     font-weight: 800;
   }
   
   .hd-explanation h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
     text-align: center;
   }
   
   .hd-explanation p {
-    font-size: 16px;
+    font-size: 14px;
     color: #e0e0e0;
-    margin-bottom: 0px;
   }
+  
+  /* Service cards */
   .service-card {
-    background-color: #a7a49e; /* אפור חיצוני */
-    padding: 40px 0;
+    background-color: #a7a49e;
+    padding: 20px 0;
   }
-  .card_background{
-        background-color: #011629;
-        padding: 30px 40px;
-        border-radius: 12px;
-        width: 90%;         /* הקטנה מ-90% ל-80% */
-        max-width: 800px;   /* תקרה עליונה לרוחב */
-        margin: 0 auto;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  
+  .card_background {
+    background-color: #011629;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   }
-
-  .my_card_1{
+  
+  .my_card_1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
+  
   .my_card_1 > img {
-    width: 95%;
-    height: 450px;
-    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
   }
-  .my_card_1 > h2{
+  
+  .my_card_1 > h2 {
     color: white;
-    font-size: 55px;
+    font-size: 28px;
   }
-  .my_card_1 > p{
-    margin-top: 0px;
+  
+  .my_card_1 > p {
     color: white;
-    font-size: 45px;
+    font-size: 18px;
+    text-align: center;
   }
+  
   .card-button {
     background-color: #f0e7dc;
     color: #000;
@@ -117,149 +115,125 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 45px;
-    transition: background-color 0.3s ease;
-    margin-left: 550px;
+    font-size: 16px;
+    margin-top: 15px;
   }
   
-  .card-button:hover {
-    background-color: #e0d6c8;
-  }
+  /* About Liora */
   .about-liora {
-    background-image: url('./Rectangle\ 5.png'); /* קובץ הרקע שלך */
+    background-image: url('./Rectangle 5.png');
     background-size: cover;
     background-position: center;
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
     direction: rtl;
   }
   
   .about-content {
-    max-width: 100%;
-    margin: 0 auto;
     color: black;
-    font-size: 30px;
+    font-size: 16px;
     text-align: start;
   }
   
   .liora-photo {
-    width: 550px;
-    height: 500px;
-    margin-bottom: 30px;
-    margin-right: 200px;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
   }
   
   .about-button {
     display: block;
-    width: 150px;
-    margin-top: 30px;
-    margin-right: 0; /* אפשר להוסיף מרווח מימין אם צריך */
-    background-color: transparent;  /* -שקוף */
-    color: #0d1b2a; /* כחול כהה */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 60px;
-    padding-left: 60px;
-    border: 2px solid #0d1b2a; /* מסגרת */
+    width: auto;
+    margin: 20px auto 0;
+    background-color: transparent;
+    color: #0d1b2a;
+    padding: 10px 30px;
+    border: 2px solid #0d1b2a;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 18px;
     transition: all 0.3s ease;
-    
   }
   
   .about-button:hover {
     background-color: #0d1b2a;
     color: white;
   }
-  .bold_big_span{
-    margin-right: 250px;
+  
+  /* Blog articles */
+  .bold_big_span {
+    display: block;
+    margin: 30px 0 10px;
+    text-align: center;
     color: black;
-    font-size: 66px;
+    font-size: 26px;
     font-weight: 800;
-    
   }
-  .our_articals{
+  
+  .our_articals {
     background-color: #011629;
+    padding: 20px;
+  }
+  
+  .img_artical_flex_1,
+  .img_artical_flex_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .img_artical_flex_1 > img,
+  .img_artical_flex_2 > img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
   }
-  .img_artical_flex_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .img_artical_flex_1 > img {
-    margin-top: 50px;
-    width: 850px;
-    height: 750px;
-  }
-  .artial_text_1{
-    position: absolute;
-    left: 250px;
-    top: 7500px;
-    right: 120px;
-    width: 700px;
+  
+  .artial_text_1,
+  .artial_text_2 {
     background-color: rgba(238, 234, 225, 0.8);
     padding: 20px;
     border-radius: 12px;
+    margin-bottom: 20px;
   }
-  .artial_text_1 > h2{
+  
+  .artial_text_1 > h2,
+  .artial_text_2 > h2 {
     color: black;
-    font-size: 55px;
+    font-size: 22px;
     font-weight: 800;
   }
-  .artial_text_1 > p{
-    padding-left: 20px;
-    padding-right: 20px;
+  
+  .artial_text_1 > p,
+  .artial_text_2 > p {
     color: black;
-    font-size: 35px;
+    font-size: 16px;
     font-weight: bold;
   }
-  .continue_button{
+  
+  .continue_button {
+    display: inline-block;
     color: black;
-    font-size: 35px;
+    font-size: 16px;
     font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
   }
-  .img_artical_flex_2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .img_artical_flex_2 >img{
-    margin-top: 750px;
-    width: 850px;
-    height: 750px;
-  }
-  .artial_text_2{
-    position: absolute;
-    left: 250px;
-    top: 9050px;
-    right: 120px;
-    width: 700px;
-    background-color: rgba(238, 234, 225, 0.8);
-    padding: 20px;
-    border-radius: 12px;
-  }
-  .artial_text_2 >h2{
-    color: black;
-    font-size: 55px;
-    font-weight: 800;
-  }
-  .artial_text_2 >p{
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  .card-button_2{
+  
+  .card-button_2 {
+    display: block;
     background-color: #f0e7dc;
     color: #000;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 45px;
-    transition: background-color 0.3s ease;
-   
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
   }
+  
