@@ -194,60 +194,51 @@ body {
   
   .our_articals {
     background-color: #011629;
-    padding: 20px;
-  }
-  .img_artical_flex_1,
-  .img_artical_flex_2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    text-align: center;
   }
   
-  .img_artical_flex_1 > img,
-  .img_artical_flex_2 > img {
-    width: 100%;
+  .article-box {
     max-width: 300px;
+    margin: 0 auto 40px;
+  }
+  
+  .article-box img {
+    width: 100%;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
   
-  .artial_text_1,
-  .artial_text_2 {
-    background-color: rgba(238, 234, 225, 0.85); /* שקיפות עדינה */
-    border-radius: 12px;
-    margin-top: -90px; /* מעלה את הטקסט מעט מעל התמונה */
-    margin-bottom: 40px; /* רווח מתחת */
-    z-index: 1;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    margin-right: 47px;
-    max-width: 250px;
-    height: auto;
+  .article-box h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0 10px;
   }
   
-  .artial_text_1 > h2,
-  .artial_text_2 > h2 {
-    color: black;
-    font-size: 22px;
-    font-weight: 800;
-    margin-bottom: 0px;
-  }
-  
-  .artial_text_1 > p,
-  .artial_text_2 > p {
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0px;
+  .article-box p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 10px;
   }
   
   .continue_button {
     display: inline-block;
-    color: black;
-    font-size: 16px;
-    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid #f0e7dc;
+    color: #f0e7dc;
+    padding: 6px 14px;
+    border-radius: 8px;
     text-decoration: none;
-    margin-top: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .continue_button:hover {
+    background-color: #f0e7dc;
+    color: #000;
   }
   
   .card-button_2 {
@@ -262,6 +253,7 @@ body {
     padding: 10px 20px;
     text-align: center;
   }
+  
   .contact-section {
     background-image: url('./Rectangle\ 10.png'); /* שים את הקובץ בשם הזה בתיקייה */
     background-size: cover;
@@ -328,6 +320,9 @@ body {
     gap: 20px;
     justify-content: center;
     margin-top: 30px;
+    background-color: #011629;
+    margin-top: 0px;
+    padding-top: 10px;
   }
   
   .circle-icon {
@@ -336,14 +331,14 @@ body {
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
     text-decoration: none;
     transition: transform 0.3s ease;
   }
   
   .circle-icon i {
-    color: white;
+    color: black;
     font-size: 24px;
   }
   
