@@ -42,6 +42,7 @@ body {
   .quote-author {
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 100px;
   }
   
   /* Human Design section */
@@ -67,6 +68,8 @@ body {
   .hd-explanation p {
     font-size: 14px;
     color: #e0e0e0;
+    margin-top: 0px;
+    
   }
   
   /* Service cards */
@@ -177,7 +180,6 @@ body {
     background-color: #011629;
     padding: 20px;
   }
-  
   .img_artical_flex_1,
   .img_artical_flex_2 {
     display: flex;
@@ -195,10 +197,14 @@ body {
   
   .artial_text_1,
   .artial_text_2 {
-    background-color: rgba(238, 234, 225, 0.8);
+    background-color: rgba(238, 234, 225, 0.85); /* שקיפות עדינה */
     padding: 20px;
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-top: -90px; /* מעלה את הטקסט מעט מעל התמונה */
+    margin-bottom: 40px; /* רווח מתחת */
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   
   .artial_text_1 > h2,
