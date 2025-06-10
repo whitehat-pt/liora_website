@@ -358,7 +358,7 @@ body {
     font-size: 23px;
     margin-top: 10px;
   }
-@media (min-width: 1024px) {
+  @media (min-width: 1024px) {
     .hero-section {
       height: 580px;
     }
@@ -507,8 +507,8 @@ body {
         background-image: url('./Rectangle 5.png');
         background-size: cover;
         background-position: center;
-        padding-right: 450px;
-        padding-left: 450px;
+        padding-right: 20px;
+        padding-left: 20px;
         text-align: center;
         direction: rtl;
       }
@@ -555,6 +555,121 @@ body {
         color: white;
       }
 }
+@media(min-width: 1024px) {
+    .bold_big_span{
+        background-color: white;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 35px;
+    }
+} 
+@media (min-width: 1024px) {
+    .our_articals {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 60px 80px;
+      position: relative;
+    }
+  
+    .article-box {
+      width: 400px;
+      border-radius: 10px;
+      position: relative;
+    }
+  
+    .article-box img {
+      width: 350px;
+      height: auto;
+      display: block;
+    }
+  
+    .article-box h2,
+    .article-box p {
+      background-color: rgba(240, 231, 220, 0.9);
+      padding-top: 0px;
+      padding-bottom: 20px;
+      color: #000;
+      margin: -50px 20px 0;
+      border-radius: 10px;
+      position: relative;
+      z-index: 2;
+      width: 260px;
+      height: 100px;
+      font-size: 18px;
+      margin-right: 50px;
+      
+    }
+  
+    .continue_button {
+      display: inline-block;
+      background-color: white;
+      border: 2px solid #000;
+      color: #000;
+      padding: 6px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin: 10px 20px 30px;
+      position: relative;
+      z-index: 2;
+    }
+    .button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+      }
+  
+  }
+  @media (min-width: 1024px) {
+    .contact-container {
+      max-width: 900px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      text-align: right;
+      padding: 40px;
+    }
+  
+    .contact-container h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+  
+    .contact-container p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+  
+    .contact-container a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  
+    .contact-container form {
+      flex: 1;
+    }
+  
+    .contact-container > p {
+      flex: 1;
+      margin-top: 10px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      background-color: white;
+      font-size: 16px;
+    }
+  }
   
   
+  
+  
+
   
