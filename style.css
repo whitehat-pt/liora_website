@@ -135,8 +135,7 @@ body {
   
   /* About Liora */
   .about-liora {
-    background-image: url('./Rectangle\ 5.png')
-    ;
+    background-image: url('./reka_alai.png');
     background-size: cover;
     background-position: center;
     padding: 30px 20px;
@@ -509,7 +508,7 @@ body {
 }
 @media (min-width: 1024px) {
     .about-liora {
-        background-image: url('./reka_copy.png');
+        background-image: url('./reka_alai.png');
         background-size: cover;
         background-position: center;
         padding-right: 40px;
@@ -523,6 +522,8 @@ body {
         font-size: 25px;
         text-align: start;
         font-weight: 500;
+
+        
       }
       .intro{
         font-weight: 700;
@@ -692,4 +693,3 @@ body {
         display: none;
     }
   }
-  
