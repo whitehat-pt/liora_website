@@ -135,7 +135,8 @@ body {
   
   /* About Liora */
   .about-liora {
-    background-image: url('./Rectangle 5.png');
+    background-image: url('./Rectangle\ 5.png')
+    ;
     background-size: cover;
     background-position: center;
     padding: 30px 20px;
@@ -152,6 +153,9 @@ body {
     font-weight: 700;
     font-size: 25px;
     color: black;
+  }
+  .desktop-text{
+    display: none;
   }
   
   
@@ -505,14 +509,15 @@ body {
 }
 @media (min-width: 1024px) {
     .about-liora {
-        background-image: url('./Rectangle 5.png');
+        background-image: url('./reka_copy.png');
         background-size: cover;
         background-position: center;
-        padding-right: 20px;
+        padding-right: 40px;
         padding-left: 20px;
         text-align: center;
         direction: rtl;
       }
+
     .about-content {
         color: black;
         font-size: 25px;
@@ -532,6 +537,7 @@ body {
         height: auto;
         margin: 0 auto 20px;
         display: block;
+        margin-top: 30px;
       }
       
       .about-button {
@@ -675,9 +681,15 @@ body {
         font-size: 15px;
     }
   }
-  
-  
-  
-  
-
+  @media screen and (min-width: 1024px) {
+    .mobile-text {
+      display: none;
+    }
+    .desktop-text {
+      display: block;
+    }
+    .desktop-text > p > .intro{
+        display: none;
+    }
+  }
   
