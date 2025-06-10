@@ -371,7 +371,7 @@ body {
     .hero-text h1 {
       font-size: 52px;
       line-height: 1.6;
-      margin-right: 840px;
+      margin-right: 760px;
     }
   
     .quote-author {
@@ -578,30 +578,31 @@ body {
       width: 400px;
       border-radius: 10px;
       position: relative;
+      text-align: right;
     }
   
     .article-box img {
       width: 350px;
       height: auto;
       display: block;
+      margin: 0 auto;
     }
   
     .article-box h2,
     .article-box p {
-      background-color: rgba(240, 231, 220, 0.9);
-      padding-top: 0px;
-      padding-bottom: 20px;
-      color: #000;
-      margin: -50px 20px 0;
-      border-radius: 10px;
-      position: relative;
-      z-index: 2;
-      width: 260px;
-      height: 100px;
+      background-color: transparent; /* ביטול רקע */
+      margin: 15px 0 10px;
+      padding: 0;
+      color: white;
+      width: auto;
+      height: auto;
       font-size: 18px;
-      margin-right: 50px;
-      
+      margin-right: 0;
     }
+  
+    .continue_button {
+      margin-right: 0;
+    }  
   
     .continue_button {
       display: inline-block;
@@ -637,11 +638,10 @@ body {
     }
   
     .contact-container h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      margin-top: 0;
-    }
-  
+        position: absolute;
+
+      }
+      
     .contact-container p {
       font-size: 18px;
       line-height: 1.8;
@@ -666,6 +666,13 @@ body {
     .contact-form textarea {
       background-color: white;
       font-size: 16px;
+    }
+  }
+
+  @media(min-width: 1024px){
+    .footer-text{
+        color: white;
+        font-size: 15px;
     }
   }
   
