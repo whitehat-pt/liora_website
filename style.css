@@ -692,4 +692,7 @@ body {
     .desktop-text > p > .intro{
         display: none;
     }
+          .about-button{
+        display: none;
+    }
   }
