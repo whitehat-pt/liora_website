@@ -9,6 +9,9 @@
     body {
     background-image: url('./map_continue_mobile.png');
     background-size: cover;
+    
+  }
+  .text_lines{
     padding-right: 20px;
   }
   .headline{
@@ -18,7 +21,7 @@
     margin-bottom: 0px;
     margin-top: 80px;
     padding-left: 10px;
-    padding-bottom: 110px;
+    padding-bottom: 230px;
   }
   p{
     color: white;
@@ -41,10 +44,68 @@
     font-size: 25px;
     font-weight: 600;
   }
+    .card-button {
+    background-color: #f0e7dc;
+    color: #000;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    align-self: self-start;
+  }
+  .site-footer {
+    background-color: #011629;
+    padding: 30px 20px 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .social-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .circle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .circle-icon i {
+    color: black;
+    font-size: 24px;
+  }
+  
+  .circle-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-text {
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  .style_button{
+    margin-bottom: 25px;
+  }
     </style>
     </head>
 <body>
     <h1 class="headline">מפה ממשיכה לדבר</h1><br><br><br>
+    <div class="text_lines">
     <p>המפה ממשיכה לדבר<br>
 שיחה שמעמיקה את התדר ומלווה אותך הלאה</p>
 <p>לפעמים קריאה אחת פותחת שער –
@@ -70,6 +131,17 @@
 <p>סדרה של 3 שיחות:<br><span>210 ש"ח </span>למפגש (<span class="price">630 </span>ש"ח סכ"ה)</p>
 <p>המפה שלך לא מסתיימת ברגע שקראת אותה.
 היא ממשיכה לדבר.
-ואני כאן – להקשיב איתך, יחד עם מה שעדיין מבקש להיוולד.</p>
+ואני כאן – להקשיב איתך, יחד עם מה שעדיין מבקש להיוולד.</p><br>
+<a href="#" class="card-button">לתיאום</a><br><br>
+</div>
+<footer class="site-footer">
+    <div class="social-icons-grid">
+      <a href="#" class="circle-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="circle-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="circle-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" class="circle-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p class="footer-text">כל הזכויות שמורות לליאורה לוריא © 2025</p>
+  </footer>
 </body>
 </html>
