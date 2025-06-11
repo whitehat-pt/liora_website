@@ -1,159 +1,206 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <title>קריאה בסיסית</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <style>
-        body{
-            background-image: url('./Rectangle 5.png');
-            background-size: cover;
-        }
-        .headline_warpper{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            height: auto;
-            margin-top: 10px;
-        }
-        .headline{
-            color: black;
-            font-size: 37px;
-            font-weight: 700;
-            
-        }
-        .blog_warpper{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .blog_warpper > div > img[alt='artical1']{
-            width: 250px;
-            height: 250px;
-        }
-        .headline_blog{
-            color: white;
-            font-weight: 500;
-            font-size: 18px;
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        .intro_artical_1{
-            color: white;
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            font-weight: 300;
-        }
-        .button_articals{
-            color: white;
-        }
-        .card-button {
-        background-color: white;
-        color: #000;
-        padding-top: 5px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 5px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 16px;
-        margin-top: 15px;
-        align-self: self-start;
-        margin-right: 10px;
+  <title>קריאה בסיסית</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #011629;
+      background-size: cover;
     }
-            .blog_warpper > div > img[alt='artical2']{
-            width: 250px;
-            height: 250px;
-        }
-    .headline_blog_2{
-        color: white;
-        font-weight: 500;
-        font-size: 18px;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+
+    .headline_warpper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      height: auto;
+      margin-top: 10px;
     }
+
+    .headline {
+      color: black;
+      font-size: 37px;
+      font-weight: 700;
+    }
+
+    .blog_warpper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 30px 20px;
+    }
+
+    .article-image img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      
+    }
+
+    .article-text h2 {
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .article-text p {
+      font-size: 16px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .card-button {
+      background-color: white;
+      color: #000;
+      padding: 6px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      border: 1px solid black;
+      text-decoration: none;
+      width: fit-content;
+    }
+
     .site-footer {
-    background-color: #011629;
-    padding: 30px 20px 15px;
-    text-align: center;
-  }
-  .social-icons-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 60px);
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .circle-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-  }
-  
-  .circle-icon i {
-    color: black;
-    font-size: 24px;
-  }
-  
-  .circle-icon:hover {
-    transform: scale(1.1);
-  }
-  
-  .footer-text {
-    color: white;
-    font-size: 17px;
-    margin-top: 10px;
-  }
-  .style_button{
-    margin-bottom: 25px;
-  }
-    </style>
+      background-color: #011629;
+      padding: 30px 20px 15px;
+      text-align: center;
+    }
+
+    .social-icons-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 60px);
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .circle-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .circle-icon i {
+      color: black;
+      font-size: 24px;
+    }
+
+    .circle-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .footer-text {
+      color: white;
+      font-size: 17px;
+      margin-top: 10px;
+    }
+
+    .style_button {
+      margin-bottom: 25px;
+    }
+
+    @media(min-width: 1024px) {
+      body {
+        background-image: url('./blog_desktop_background.png');
+        background-size: cover;
+      }
+
+      .headline_warpper {
+        margin-top: 550px;
+      }
+
+      .blog_warpper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 50px 80px;
+      }
+
+      .article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f5f2ea;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 100%;
+        gap: 30px;
+        box-sizing: border-box;
+      }
+    .blog_warpper > .article:nth-child(1) .article-text p {
+    margin-bottom: 50px;
+    }
+
+/* כתבה ימנית – מרווח קטן */
+    .blog_warpper > .article:nth-child(2) .article-text p {
+    margin-bottom: 100px;
+    }
+      .article-text {
+        flex: 1;
+        text-align: right;
+      }
+      .article-text > h2{
+        color: black;
+      }
+        .article-text > p{
+        color: black;
+      }
+
+      .card-button {
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="headline_warpper">
-        <h1 class="headline">כתבות שלנו</h1>
-    </div><br><br>
-    <div class="blog_warpper">
-        <div>
-            <img src="./artical1.png" alt="artical1">
-        </div>
-        <div>
-            <h2 class="headline_blog">למה חשוב לישון לבד לפי עיצוב אנושי-ריפוי,<br>בהירות והתנקות אנרגטית...</h2>
-        </div>
-        <div>
-            <p class="intro_artical_1">בשנים האחרונות יותר ויותר אנשים מגלים את העיצוב האנושי<br>
-(human design) ככלי פרקטי ועמוק לחיים.<br>
-אחד ההיבטים הכי פחות מדוברים - אבל הכי משפיעים -<br>
-הוא איך אנחנו ישנים, ולמה שינה לבד כל כך חשובה.</p>
-        </div>
-        <a href="#" class="card-button">להמשך</a><br><br>
-        <div>
-            <img src="./artical2.png" alt="artical2">
-        </div>
-        <div>
-            <h2 class="headline_blog_2">מה זה באמת להשפיע כמניפסטור?</h2>
-        </div>
-        <div>
-            <p class="intro_artical_1">אם את מניפסטורית לפי עיצוב אנושי (Human Design), ייתכן שכבר הרגשת את זה – את נולדת כדי להשפיע.
- אבל לא במובן הכוחני של המילה. לא לשכנע, לא להיאבק, לא למשוך תשומת לב.</p>
-        </div>
+  <div class="headline_warpper">
+    <h1 class="headline">כתבות שלנו</h1>
+  </div><br><br>
+
+  <div class="blog_warpper">
+    <div class="article">
+      <div class="article-image">
+        <img src="./artical1.png" alt="artical1">
+      </div>
+      <div class="article-text">
+        <h2>למה חשוב לישון לבד לפי עיצוב אנושי-ריפוי, בהירות והתנקות אנרגטית...</h2>
+        <p>בשנים האחרונות יותר ויותר אנשים מגלים את העיצוב האנושי (human design) ככלי פרקטי ועמוק לחיים. אחד ההיבטים הכי פחות מדוברים - אבל הכי משפיעים - הוא איך אנחנו ישנים, ולמה שינה לבד כל כך חשובה.</p>
         <a href="#" class="card-button">להמשך</a>
-    </div><br>
-    <footer class="site-footer">
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="article-image">
+        <img src="./artical2.png" alt="artical2">
+      </div>
+      <div class="article-text">
+        <h2>מה זה באמת להשפיע כמניפסטור?</h2>
+        <p>אם את מניפסטורית לפי עיצוב אנושי (Human Design), ייתכן שכבר הרגשת את זה – את נולדת כדי להשפיע. אבל לא במובן הכוחני של המילה. לא לשכנע, לא להיאבק, לא למשוך תשומת לב.</p>
+        <a href="#" class="card-button">להמשך</a>
+      </div>
+    </div>
+  </div><br>
+
+  <footer class="site-footer">
     <div class="social-icons-grid">
       <a href="#" class="circle-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="#" class="circle-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -162,6 +209,5 @@
     </div>
     <p class="footer-text">כל הזכויות שמורות לליאורה לוריא © 2025</p>
   </footer>
-
 </body>
 </html>
