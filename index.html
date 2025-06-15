@@ -130,23 +130,27 @@
     </div>
   </section>
   
-  <section class="contact-section">
-    <div class="contact-container">
-      <h2>צור קשר</h2>
-      <p>אתם מוזמנים ליצור איתי קשר דרך אימייל / טופס / וואטספ<br>
-        <a href="mailto:lioraluria@gmail.com">lioraluria@gmail.com</a><br>
-        050-5819274
-      </p>
-  
-      <form class="contact-form">
-        <input type="text" placeholder="שם מלא">
-        <input type="email" placeholder="אימייל">
-        <input type="tel" placeholder="טלפון ( חובה)">
-        <textarea placeholder="הודעה"></textarea>
-        <button type="submit">לשליחה</button>
-      </form>
-    </div>
-  </section>
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>צור קשר</h2>
+    <p>
+      אתם מוזמנים ליצור איתי קשר דרך אימייל / טופס / וואטספ<br>
+      <a href="mailto:lioraluria@gmail.com">lioraluria@gmail.com</a><br>
+      050-5819274
+    </p>
+
+    <form class="contact-form" action="https://formspree.io/f/mgvyylve" method="POST">
+       <!-- הפנייה לעמוד תודה מותאם -->
+    <input type="hidden" name="_redirect" value="https://whitehat-pt.github.io/liora_website/thank_you_page.html">
+      <input type="text" name="name" placeholder="שם מלא" required>
+      <input type="email" name="email" placeholder="אימייל" required>
+      <input type="tel" name="phone" placeholder="טלפון ( חובה)">
+      <textarea name="message" placeholder="הודעה" required></textarea>
+      <button type="submit">לשליחה</button>
+    </form>
+  </div>
+</section>
+
   <footer class="site-footer">
     <div class="social-icons-grid">
       <a href="#" class="circle-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
